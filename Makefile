@@ -1,6 +1,6 @@
 install:
-	chmod +x /scripts/install.sh
-	/scripts/install.sh
+	chmod +x ./scripts/install.sh
+	./scripts/install.sh
 
 init:
 	docker compose up airflow-init

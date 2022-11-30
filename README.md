@@ -17,14 +17,6 @@ make install
 make init
 ```
 
-## Uninstall
-
-### Remove all
-
-```
-make clean_up
-```
-
 ## Usage
 
 ### Run Airflow
@@ -55,6 +47,14 @@ curl -X GET  \
     --user "airflow:airflow" \
     "${ENDPOINT_URL}/api/v1/pools"
 ```    
+
+## Uninstall
+
+### Remove all
+
+```
+make clean_up
+```
 
 ## Utils
 
