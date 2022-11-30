@@ -26,10 +26,29 @@ make run
 ```
 
 ### Running the CLI commands
+
+
+- Airflow Info
 ```
 ./airflow.sh info
+```
+
+- Container Bash
+```
 ./airflow.sh bash
+```
+
+- Container Python
+```
 ./airflow.sh python
+```
+
+### Unit Tests (Pytest)
+
+```
+./airflow.sh bash
+pip install pytest
+pytest
 ```
 
 ### Web Interface
