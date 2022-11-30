@@ -1,14 +1,37 @@
-### Running Airflow in Docker
-https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+# Docker Apache
 
 ### Pre-req
 
 Docker & Docker Compose - https://docs.docker.com/compose/install/
 
-### Login
+### Running Airflow in Docker
 
-* user: airflow 
-* password: airflow
+https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+
+## Setup
+
+### Install
+
+```
+make install
+make init
+```
+
+## Uninstall
+
+### Remove all
+
+```
+make clean_up
+```
+
+## Usage
+
+### Run Airflow
+
+```
+make run
+```
 
 ### Running the CLI commands
 ```
@@ -21,6 +44,8 @@ Docker & Docker Compose - https://docs.docker.com/compose/install/
 
 http://localhost:8080
 
+* user: airflow 
+* password: airflow
 
 ###  Sending requests to the REST API
 
@@ -31,7 +56,9 @@ curl -X GET  \
     "${ENDPOINT_URL}/api/v1/pools"
 ```    
 
-### Docker (Utils)
+## Utils
+
+### Docker
 
 https://www.geeksforgeeks.org/remove-all-containers-and-images-in-docker/
 
