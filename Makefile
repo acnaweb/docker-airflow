@@ -1,6 +1,6 @@
 install:
-	chmod +x install.sh
-	./install.sh
+	chmod +x /scripts/install.sh
+	/scripts/install.sh
 
 init:
 	docker compose up airflow-init
@@ -10,6 +10,8 @@ clean:
 
 clean_up:
 	docker-compose down --volumes --rmi all
+	chmod +x ./scripts/remove.sh
+	./scripts/remove.sh
 
 run:
 	docker-compose up
